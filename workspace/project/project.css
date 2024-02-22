@@ -138,6 +138,10 @@ body {
     margin: 50px;
   } 
 
+  .banner{
+    height: 300px;
+  }
+
   .banner-box li{
     margin: 0;
   }
@@ -194,6 +198,27 @@ li{
     padding-left: 5px;
 } 
 
+.area2{
+  margin-left: 80px;
+}
+
 .as-header{
+  position: relative;
   display: flex;
+}
+
+.position{
+  position: absolute;
+  margin-top: 21px;
+  right: 0px;
+  margin-right: 200px;
+}
+
+.culture-text{
+  font-size: 23px;
+}
+
+.postion-text{
+  font-size: 14px;
+  color: lightslategray;
 }
