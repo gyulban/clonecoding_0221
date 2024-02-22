@@ -193,3 +193,7 @@ li{
     right: -9px;
     padding-left: 5px;
 } 
+
+.as-header{
+  display: flex;
+}
