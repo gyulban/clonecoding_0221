@@ -209,7 +209,8 @@ li{
 
 .position{
   position: absolute;
-  margin-top: 21px;
+  display: flex;
+  margin-top: 30px;
   right: 0px;
   margin-right: 200px;
 }
@@ -219,6 +220,42 @@ li{
 }
 
 .postion-text{
-  font-size: 14px;
+  font-size: 15px;
+  color: lightslategray;
+  margin-right: 20px;
+  padding-top: 8px;
+}
+
+.as-a{
+  margin-left: 15px;
+}
+
+.position-pointer{
+  margin-top: 6px;
+  display: flex;
+  height: 27px;
+  width: 80px;
+  justify-content: center;
+}
+
+.prev-pointer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid lightgrey;
+  width: 35px;
+  font-size: 25px;
+  color: lightslategray;
+}
+
+.next-pointer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 10px 10px 0px;
+  border: 1px solid lightgrey;
+  width: 35px;
+  font-size: 25px;
   color: lightslategray;
 }
