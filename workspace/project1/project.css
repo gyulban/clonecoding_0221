@@ -286,7 +286,7 @@ border-radius: 10px 0px 0px 10px;
 border: 1px solid lightgrey;
 width: 50px;
 font-size: 25px;
-color: lightslategray;
+color: gray;
 cursor: pointer;
 }
 
@@ -299,10 +299,10 @@ border-radius: 0px 10px 10px 0px;
 border: 1px solid lightgrey;
 width: 50px;
 font-size: 25px;
-color: lightslategray;
+color: gray;
 cursor: pointer;
 }
 
-.next-text{
-
+.prev-empty, .next-empty{
+  color: lightsteelblue;
 }

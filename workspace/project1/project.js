@@ -98,14 +98,17 @@ checkEnd2();
 function checkEnd2() {
     if (currentIdx2 <= 0) {
         $(".prev-text").css("display", "none");
-        
+        $(".prev-empty").css("display", "block");
     } else {
         $(".prev-text").css("display", "block");
+        $(".prev-empty").css("display", "none");
     }
 
     if (currentIdx2 >= 3) {
         $(".next-text").css("display", "none");
+        $(".next-empty").css("display", "block");
     } else {
         $(".next-text").css("display", "block");
+        $(".next-empty").css("display", "none");
     }
 }
