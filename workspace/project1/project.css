@@ -13,6 +13,35 @@ header {
   box-shadow : 0.5px 0.2px 0px 0px gray;
 }
 
+main{
+  box-shadow : 0.5px 0.2px 0px 0px gray;
+}
+
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-box{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* 좌우 여백 설정 */
+}
+
+.nothing{
+  width: 100%;
+  height: 80px;
+}
+
+hr{
+  color: lightsteelblue;
+}
+
 .intro-bar {
   width: 100%;
   max-width: 1200px; /* 헤더 내부 요소 최대 너비 설정 */
@@ -46,7 +75,7 @@ a {
 }
 
 .glass{
-  margin-top: 25px;
+  margin-top: 14px;
 }
 
 
@@ -154,6 +183,10 @@ main{
   margin: 0;
 }
 
+.banner-box-3 li{
+  margin-left: 10px;
+}
+
 .culture-container .banner-wrap-2{
   width: 1140px;
   height: 400px;
@@ -172,6 +205,15 @@ main{
   position: relative;
 }
 
+.banner-wrap-3{
+  margin-left: 20px;
+  width: 1115px;
+  height: 400px;
+  display: flex;
+  overflow : hidden;
+  position: relative;
+}
+
 .banner-box {
   display: flex;
   width: 100%;
@@ -184,6 +226,17 @@ main{
 }
 
 .banner-box-2{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  position: absolute;
+  left: 0px;
+}
+
+.banner-box-3{
   display: flex;
   width: 100%;
   height: 100%;
@@ -288,8 +341,31 @@ height: 20px;
 width: 100px;
 }
 
+.pointer{
+  position: absolute;
+  right: 130px;
+  top: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 20px;
+width: 100px;
+}
+
 .prev-pointer{  
 display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px 0px 0px 10px;
+border: 1px solid lightgrey;
+width: 50px;
+font-size: 25px;
+color: gray;
+cursor: pointer;
+}
+
+.pre-pointer{
+  display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 10px 0px 0px 10px;
@@ -311,6 +387,23 @@ width: 50px;
 font-size: 25px;
 color: gray;
 cursor: pointer;
+}
+
+.nex-pointer{
+  text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 0px 10px 10px 0px;
+border: 1px solid lightgrey;
+width: 50px;
+font-size: 25px;
+color: gray;
+cursor: pointer;
+}
+
+.pre-empty, .nex-empty{
+  color: lightsteelblue;
 }
 
 .prev-empty, .next-empty{
@@ -340,6 +433,6 @@ cursor: pointer;
   height: 800px;
 }
 
-.pre-pointer, .nex-pointer{
-  background-color: white;
+.theme .as-header{
+  margin-left: 5px;
 }
