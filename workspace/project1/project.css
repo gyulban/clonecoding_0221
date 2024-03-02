@@ -6,8 +6,8 @@ body {
 
 header {
   position: sticky;
-  background-color: white; /* 헤더 배경색 설정 */
-  height: 60px; /* 헤더 높이 설정 */
+  background-color: white;
+  height: 60px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -443,6 +443,21 @@ cursor: pointer;
   transition: filter .3s;
 }
 
+.login a:hover{
+  filter: brightness(94%);
+  transition: filter .3s;
+}
+
+.service a:hover{
+  filter: brightness(94%);
+  transition: filter .3s;
+}
+
+.area1-li :hover{
+  filter: brightness(98%);
+  transition: filter .3s;
+}
+
 .theme{
   margin-left: 80px;
   margin-top: 20px;
@@ -571,4 +586,4 @@ hr{
 
 .brandLinks li {
   margin-left: 20px;
-}
+} 
