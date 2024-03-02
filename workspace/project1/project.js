@@ -1,3 +1,20 @@
+$(".menu-touch").on("mouseover", flexDisplay);
+$(".megadropdown").on("mouseover", flexDisplay);
+function flexDisplay(){
+    $(".megadropdown").css("display", "flex")
+    $(".main").css("opacity", 0.40)
+    $(".footer").css("opacity", 0.40)
+}
+
+$(".menu-touch").on("mouseleave", noneDisplay);
+$(".megadropdown").on("mouseleave", noneDisplay);
+function noneDisplay(){
+    $(".megadropdown").css("display", "none")
+    $(".main").css("opacity", 1)
+    $(".footer").css("opacity", 1)
+}
+
+
 //슬라이드 이미지 감싸고 있는 부모요소
 let $bannerBox = $(".banner-box");
 //슬라이드 이미지
