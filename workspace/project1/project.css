@@ -89,7 +89,9 @@ main{
   z-index: 2;
 }
 
-
+.login button{
+  cursor: pointer;
+}
 
 .intro-bar {
   width: 100%;
@@ -439,7 +441,7 @@ cursor: pointer;
 }
 
 .c-list-li :hover{
-  filter: brightness(96%);
+  filter: brightness(98%);
   transition: filter .3s;
 }
 
