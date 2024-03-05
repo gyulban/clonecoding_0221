@@ -168,15 +168,17 @@ select{
 }
 
 hr{
+  margin-top: 15px;
+  margin-bottom: 15px;
   border-top: none;
-    border-right: none;
-    border-left: none;
-    border-image: initial;
-    width: 100%;
-    border-bottom: 1px solid rgba(112, 115, 124, 0.22);
+  border-right: none;
+  border-left: none;
+  border-image: initial;
+  width: 100%;
+  border-bottom: 1px solid rgba(112, 115, 124, 0.22);
 }
 
-.check{
+.check-all{
   position: relative;
   display: flex;
   flex-direction: row;
@@ -205,11 +207,21 @@ hr{
   cursor: pointer;
 }
 
-.check p{
+.check-all p{
   margin-left: 8px;
+  font-size: 15px;
+  text-align: left;
+  word-break: keep-all;
+  font-weight: 500;
 }
 
 .p-box{
   display: flex;
   flex: 1 1 0%;
+}
+
+.pd{
+  color: rgba(55, 56, 60, 0.61);
+  font-weight: 400;
+  opacity: 0.6;
 }
