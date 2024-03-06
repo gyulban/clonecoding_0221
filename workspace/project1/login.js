@@ -10,9 +10,9 @@ $(".check-input").click(function(){
     $(".check-input-all").prop("checked", $("check-input").filter(":checked").length === 5)
 })
   
-$("#age").click(function(){
-    $("#age").prop("checked", true)
-})
+// $("#age").click(function(){
+//     $("#age").prop("checked", true)
+// })
 
 
   function check1(){
