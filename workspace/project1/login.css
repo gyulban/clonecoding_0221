@@ -236,6 +236,7 @@ hr{
 .p-box{
   display: flex;
   flex: 1 1 0%;
+  cursor: pointer;
 }
 
 .pd{
