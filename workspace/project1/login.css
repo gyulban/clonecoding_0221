@@ -199,6 +199,24 @@ hr{
   margin-top: 2px;
 }
 
+.check-input-all{
+  position: absolute;
+  opacity: 0;
+  width: calc(100% - 90px);
+  height: 100%;
+  cursor: pointer;
+}
+
+.check-o{
+  display: none;
+  margin-top: 5px;
+}
+
+.check-o-d{
+  display: none;
+  margin-top: 3px;
+}
+
 .check-input{
   position: absolute;
   opacity: 0;
@@ -224,4 +242,48 @@ hr{
   color: rgba(55, 56, 60, 0.61);
   font-weight: 400;
   opacity: 0.6;
+  cursor: pointer;
+}
+
+.check-detail{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.check-label{
+  margin-top: 8px;
+  display: flex;
+  margin-left: 28px;
+}
+
+.c-lab{
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 18px;
+  cursor: pointer;
+}
+
+.label-input{
+  display: none;
+}
+
+.c-lab span{
+  margin-top: 4px;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.c-lab p{
+  opacity: 0.6;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(55, 56, 60, 0.61);
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }

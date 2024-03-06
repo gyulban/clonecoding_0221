@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script defer src="./login.js"></script>
 </head>
 <body>
   <header>
@@ -74,8 +76,12 @@
           </div>
           <div class="info-check">
             <div class="check-all">
-              <div class="checkbox"></div>
-              <input type="checkbox" name=""is_agree_all" class="check-input">
+              <div class="checkbox">
+                <span class="check-o" id="all1">
+                  <img src="./img/화면 캡처 2024-03-06 143059.png" alt="">
+                </span>
+              </div>
+              <input type="checkbox" name=""is_agree_all" class="check-input-all" id="all">
               <div class="p-box">
                 <p>전체 동의</p>
               </div>
@@ -83,16 +89,110 @@
             <hr>
             <div class="check-detail">
               <div class="check-all">
-                <div class="checkbox"></div>
-                <input type="checkbox" name="is_above_14" class="check-input">
+                <div class="checkbox">
+                  <span class="check-o-d" id="age1">
+                    <img src="./img/화면 캡처 2024-03-06 143059.png" alt="">
+                  </span>
+                </div>
+                <input type="checkbox" name="is_above_14" class="check-input" id="age">
                 <div class="p-box">
                   <p class="pd">만 14세 이상입니다. (필수)</p>
                 </div>
               </div>
-              <div class="check-all"></div>
-              <div class="check-all"></div>
-              <div class="check-2"></div>
-              <div class="check-2"></div>
+              <div class="check-all">
+                <div class="checkbox">
+                  <span class="check-o-d" id="agree11">
+                    <img src="./img/화면 캡처 2024-03-06 143059.png" alt="">
+                  </span>
+                </div>
+                <input type="checkbox" name="is_terms_conditions" class="check-input" id="agree1">
+                <div class="p-box">
+                  <p class="pd">원티드 이용약관 동의 (필수)</p>
+                </div>
+              </div>
+              <div class="check-all">
+                <div class="checkbox">
+                  <span class="check-o-d" id="agree21">
+                    <img src="./img/화면 캡처 2024-03-06 143059.png" alt="">
+                  </span>
+                </div>
+                <input type="checkbox" name="is_collect_information" class="check-input" id="agree2">
+                <div class="p-box">
+                  <p class="pd">원티드 개인정보 수집 및 이용 동의 (필수)</p>
+                </div>
+              </div>
+              <div class="check-2">
+                <div class="check-all">
+                  <div class="checkbox">
+                    <span class="check-o-d" id="recieve11">
+                      <img src="./img/화면 캡처 2024-03-06 143059.png" alt="">
+                    </span>
+                  </div>
+                  <input type="checkbox" name="is_accept_event_all" class="check-input" id="recieve1">
+                  <div class="p-box">
+                    <p class="pd">채용 소식, 커리어 콘텐츠, 이벤트 등 원티드 맞춤 정보 받기</p>
+                  </div>
+                </div>
+                <div class="check-label">
+                  <label for="" class="c-lab">
+                    <input type="checkbox" name="accept_marketing_email" class="label-input">
+                    <span>
+                      <img src="./img/화면 캡처 2024-03-06 133026.png" alt="">
+                    </span>
+                    <p>이메일</p>
+                  </label>
+                  <label for="" class="c-lab">
+                    <input type="checkbox" name="accept_marketing_push" class="label-input">
+                    <span>
+                      <img src="./img/화면 캡처 2024-03-06 133026.png" alt="">
+                    </span>
+                    <p>앱 푸시</p>
+                  </label>
+                  <label for="" class="c-lab">
+                    <input type="checkbox" name="accept_marketing_sms" class="label-input">
+                    <span>
+                      <img src="./img/화면 캡처 2024-03-06 133026.png" alt="">
+                    </span>
+                    <p>문자 메시지</p>
+                  </label>
+                </div>
+              </div>
+              <div class="check-2">
+                <div class="check-all">
+                  <div class="checkbox">
+                    <span class="check-o-d" id="recieve21">
+                      <img src="./img/화면 캡처 2024-03-06 143059.png" alt="">
+                    </span>
+                  </div>
+                  <input type="checkbox" name="is_accept_recruit_all" class="check-input" id="recieve2">
+                  <div class="p-box">
+                    <p class="pd">맞춤 추천 포지션 정보 받기</p>
+                  </div>
+                </div>
+                <div class="check-label">
+                  <label for="" class="c-lab">
+                    <input type="checkbox" name="accept_recruit_email" class="label-input">
+                    <span>
+                      <img src="./img/화면 캡처 2024-03-06 133026.png" alt="">
+                    </span>
+                    <p>이메일</p>
+                  </label>
+                  <label for="" class="c-lab">
+                    <input type="checkbox" name="accept_recruit_push" class="label-input">
+                    <span>
+                      <img src="./img/화면 캡처 2024-03-06 133026.png" alt="">
+                    </span>
+                    <p>앱 푸쉬</p>
+                  </label>
+                  <label for="" class="c-lab">
+                    <input type="checkbox" name="accept_recruit_sms" class="label-input">
+                    <span>
+                      <img src="./img/화면 캡처 2024-03-06 133026.png" alt="">
+                    </span>
+                    <p>문자 메시지</p>
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
           <div></div>
