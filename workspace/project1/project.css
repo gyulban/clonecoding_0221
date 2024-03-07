@@ -443,11 +443,7 @@ cursor: pointer;
 }
 
 .c-list-li :hover{
-<<<<<<< HEAD
   filter: brightness(97%);
-=======
-  filter: brightness(98%);
->>>>>>> 221bf6afb6d1be6d1b803eb9f3a60482c5f17344
   transition: filter .3s;
 }
 
@@ -511,7 +507,6 @@ footer{
 .askLinks a{
   margin-right: 15px;
   font-size: 13px;
-  font-style: normal;
   font-weight: 700;
   line-height: 138.5%;
   letter-spacing: .25px;
