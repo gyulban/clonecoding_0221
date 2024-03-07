@@ -1,72 +1,83 @@
-$(".check-input-all").click(function(){
-    var checked = $("check-input-all").is(":checked");
+$(".check-input-all").on("click", function(e){
+  $(".check-input").prop("checked", e.target.checked);
+  $(".check-o").css("display", e.target.checked ? "flex" : "none");
+  $(".check-o-d").css("display", e.target.checked ? "flex" : "none");
+})
 
-    if(checked){
-        $(".check-input").prop("checked", true)
-    }
+$(".check-input").on("click", function(e){
+  $(".check-input-all").prop("checked", $(".check-input").filter(":checked").length === 5)
 })
-  
-$(".check-input").click(function(){
-    $(".check-input-all").prop("checked", $("check-input").filter(":checked").length === 5)
+
+$("#age").on("click", function(e){
+  $("#age1").css("display", e.target.checked ? "flex" : "none");
+  if($(".check-input").filter(":checked").length === 5){
+    $(".check-o").css("display", "flex")
+  }else{
+    $(".check-o").css("display", "none")
+  }
 })
-  
-// $("#age").click(function(){
-//     $("#age").prop("checked", true)
+
+$("#agree1").on("click", function(e){
+  $("#agree11").css("display", e.target.checked ? "flex" : "none");
+  if($(".check-input").filter(":checked").length === 5){
+    $(".check-o").css("display", "flex")
+  }else{
+    $(".check-o").css("display", "none")
+  }
+})
+
+
+$("#agree2").on("click", function(e){
+  $("#agree21").css("display", e.target.checked ? "flex" : "none");
+  if($(".check-input").filter(":checked").length === 5){
+    $(".check-o").css("display", "flex")
+  }else{
+    $(".check-o").css("display", "none")
+  }
+})
+
+
+$("#recieve1").on("click", function(e){
+  $("#recieve11").css("display", e.target.checked ? "flex" : "none");
+  if($(".check-input").filter(":checked").length === 5){
+    $(".check-o").css("display", "flex")
+  }else{
+    $(".check-o").css("display", "none")
+  }
+})
+
+$("#recieve2").on("click", function(e){
+  $("#recieve21").css("display", e.target.checked ? "flex" : "none");
+  if($(".check-input").filter(":checked").length === 5){
+    $(".check-o").css("display", "flex")
+  }else{
+    $(".check-o").css("display", "none")
+  }
+})
+
+// $("#e1").on("click", function(e){
+//   if($("#e1p").css("color", "rgba(55, 56, 60, 0.61)")){
+//     $("#e1p").css("color", "blue")
+//   }
+//   else if($("#e1p").css("color", "blue")){
+//     $("#e1p").css("color", "rgba(55, 56, 60, 0.61)")
+//   }
 // })
 
+// $("#e1").click(function () {
+//     var e1p = $("#e1p");
+//     var currentColor = e1p.css("color");
 
-  function check1(){
-    if($("#age").is(":checked")){
-      $("#age1").css("display", "flex")
-      $("#age1").css("margin-bottom", "3px")
-    }else{
-        $("#age1").css("display", "none")
-    }
-  }
+//     if (currentColor === "rgb(55, 56, 60)" || currentColor === "rgba(55, 56, 60, 0.61)") {
+//         e1p.css("color", "blue");
+//     } 
+// });
 
-  function check2(){
-    if($("#agree1").is(":checked")){
-      $("#agree11").css("display", "flex")
-      $("#agree11").css("margin-bottom", "3px")
-    }else{
-        $("#agree11").css("display", "none")
-    }
-  }
+// $("#e1").click(function () {
+//   var e1p = $("#e1p");
+//   var currentColor = e1p.css("color");
 
-  function check3(){
-    if($("#agree2").is(":checked")){
-      $("#agree21").css("display", "flex")
-      $("#agree21").css("margin-bottom", "3px")
-    }else{
-        $("#agree21").css("display", "none")
-    }
-  }
-
-  function check4(){
-    if($("#recieve1").is(":checked")){
-      $("#recieve11").css("display", "flex")
-      $("#recieve11").css("margin-bottom", "3px")
-    }else{
-        $("#recieve11").css("display", "none")
-    }
-  }
-
-  function check5(){
-    if($("#recieve2").is(":checked")){
-      $("#recieve21").css("display", "flex")
-      $("#recieve21").css("margin-bottom", "3px")
-    }else{
-        $("#recieve21").css("display", "none")
-    }
-  }
-
-  check1();
-
-  console.log($("#age").is(":checked"))
-
-  $('#allCk').click(function(){
-    var checked = $('#allCk').is(':checked');
-    
-    if(checked)
-        $('input:checkbox').prop('checked',true);
-});
+//   if (currentColor === "blue") {
+//     e1p.css("color", "rgba(55, 56, 60, 0.61)");
+//   }
+// });
