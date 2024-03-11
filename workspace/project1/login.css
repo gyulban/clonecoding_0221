@@ -274,7 +274,11 @@ hr{
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   margin-right: 18px;
+=======
+  margin-right: 20px;
+>>>>>>> bfb49bd048d750963a8e5acc37a128522f2b6f70
   cursor: pointer;
 }
 
@@ -318,4 +322,7 @@ hr{
   text-align: left;
   font-weight: 600;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> bfb49bd048d750963a8e5acc37a128522f2b6f70

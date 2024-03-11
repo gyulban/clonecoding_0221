@@ -64,6 +64,7 @@ $("#recieve2").on("click", function(e){
 //   }
 // })
 
+<<<<<<< HEAD
 $("#e1").click(function () {
     var e1p = $("#e1p");
     var currentColor = e1p.css("color");
@@ -82,3 +83,22 @@ $("#e1").click(function () {
   }
 });
 
+=======
+// $("#e1").click(function () {
+//     var e1p = $("#e1p");
+//     var currentColor = e1p.css("color");
+
+//     if (currentColor === "rgb(55, 56, 60)" || currentColor === "rgba(55, 56, 60, 0.61)") {
+//         e1p.css("color", "blue");
+//     } 
+// });
+
+// $("#e1").click(function () {
+//   var e1p = $("#e1p");
+//   var currentColor = e1p.css("color");
+
+//   if (currentColor === "blue") {
+//     e1p.css("color", "rgba(55, 56, 60, 0.61)");
+//   }
+// });
+>>>>>>> bfb49bd048d750963a8e5acc37a128522f2b6f70
